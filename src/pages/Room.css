@@ -1,0 +1,105 @@
+.outer-container{
+    height: 100%;
+    width:100%;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-container{
+    min-height: 100vh;
+    min-width: 20vw;
+    background-color: black;
+    color: white;
+    backdrop-filter: blur(35px);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border: 2px solid rgba(255,255,255,0.2);
+}
+
+.editor-container{
+    min-width: 80vw;
+    min-height: 100vh;
+}
+
+.editor-textarea{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.side-title-container{
+    min-height: 11vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+}
+
+.side-title-container>h1{
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.side-info-title-container{
+    border-top: 2px solid rgba(255,255,255,0.2);
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.side-info-title-container>p{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.side-users-container{
+    min-height: 60vh;
+    width: 100%;
+    border-top: 2px solid rgba(255,255,255,0.2);
+    padding: 5px;
+}
+
+.userName{
+    padding: 2px;
+    margin-top:5px;
+}
+
+.userName>span{
+    display: inline-block;
+}
+
+.side-buttons-container{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 2px solid rgba(255,255,255,0.2);
+}
+
+.side-buttons-container>button{
+    margin-top:8%;
+    width: 80%;
+    height: 25%;
+    background-color:lightgreen;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border: 2px solid rgba(255,255,255,0.2);
+    cursor: pointer;    
+}
+
+.leave-room-button{
+    background-color: rgb(203, 11, 11) !important;
+}
+
+.index-span{
+    width: 13px;
+}
+
+.CodeMirror{
+    padding-top: 20px;
+    min-height: 100vh;
+    min-width: 80vw;
+}

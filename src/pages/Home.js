@@ -22,7 +22,11 @@ const Home = () => {
         toast.error("Room ID and Name is required");
         return;
     }
-    navigate(`/editor/${roomId}`);
+    navigate(`/room/${roomId}`,{
+      state:{
+        name
+      }
+    });
   }
 
   const handleEnter=(e)=>{
@@ -64,7 +68,7 @@ const Home = () => {
         </div>
       </div>
       <div className="home-footer">
-        <p>Copyright © 2024</p>
+        <p>Copyright © {new Date().getFullYear()}</p>
         <p>Made By Lakshay Bindlish</p>
       </div>
     </div>
