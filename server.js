@@ -6,6 +6,11 @@ const app = express();
 const httpServer = http.createServer(app);
 const io = new Server(httpServer);
 
+app.use(express.static('build'));
+app.use((req,res,next)=>{
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+})
+
 const userSocketIdMap = {};
 
 const getConnectedUsers = (roomId) => {
