@@ -43,7 +43,7 @@ const Editor = ({ socketRef, roomId, changeCode}) => {
   useEffect(()=>{
     if(socketRef.current){
         socketRef.current.on('code-change', ({code})=>{
-            if(code){
+            if(code !== null){
                 editorRef.current.setValue(code);
             }
         })
